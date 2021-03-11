@@ -1,0 +1,63 @@
+{
+    "name": "roberts/laravel-recipal-api",
+    "description": "Laravel Package for wrapper of ReciPal API",
+    "keywords": [
+        "roberts",
+        "laravel-recipal-api"
+    ],
+    "homepage": "https://github.com/roberts/laravel-recipal-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roberts",
+            "email": "packages@roberts.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "tipoff/authorization": "^2.0.0",
+        "tipoff/support": "^1.4.10"
+    },
+    "require-dev": {
+        "tipoff/test-support": "^1.0.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Roberts\\LaravelRecipalApi\\": "src",
+            "Roberts\\LaravelRecipalApi\\Database\\Factories\\": "database/factories",
+            "Roberts\\LaravelRecipalApi\\Database\\Seeders\\": "database/seeders"
+        },
+        "files": [
+            "src/Helpers/SerpApiSearch.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Roberts\\LaravelRecipalApi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Roberts\\LaravelRecipalApi\\LaravelRecipalApiServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
