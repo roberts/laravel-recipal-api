@@ -27,10 +27,7 @@
             "Roberts\\LaravelRecipalApi\\": "src",
             "Roberts\\LaravelRecipalApi\\Database\\Factories\\": "database/factories",
             "Roberts\\LaravelRecipalApi\\Database\\Seeders\\": "database/seeders"
-        },
-        "files": [
-            "src/Helpers/SerpApiSearch.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
