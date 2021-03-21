@@ -9,7 +9,6 @@ use Roberts\LaravelRecipalApi\LaravelRecipalApiServiceProvider;
 use Roberts\Locations\LocationsServiceProvider;
 use Roberts\Support\SupportServiceProvider;
 use Roberts\TestSupport\BaseTestCase;
-use Tipoff\TestSupport\Providers\NovaPackageServiceProvider;
 
 class TestCase extends BaseTestCase
 {
