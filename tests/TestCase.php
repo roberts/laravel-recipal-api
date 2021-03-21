@@ -6,10 +6,10 @@ namespace Roberts\LaravelRecipalApi\Tests;
 
 use Laravel\Nova\NovaCoreServiceProvider;
 use Roberts\LaravelRecipalApi\LaravelRecipalApiServiceProvider;
-use Roberts\LaravelRecipalApi\Tests\Support\Providers\NovaTestbenchServiceProvider;
 use Roberts\Locations\LocationsServiceProvider;
 use Roberts\Support\SupportServiceProvider;
 use Roberts\TestSupport\BaseTestCase;
+use Tipoff\TestSupport\Providers\NovaPackageServiceProvider;
 
 class TestCase extends BaseTestCase
 {
