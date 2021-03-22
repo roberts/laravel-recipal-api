@@ -9,7 +9,7 @@ use Tipoff\Support\TipoffServiceProvider;
 
 class LaravelRecipalApiServiceProvider extends TipoffServiceProvider
 {
-    public function configureRobertsPackage(TipoffPackage $package): void
+    public function configureTipoffPackage(TipoffPackage $package): void
     {
         $package
             ->name('laravel-recipal-api')
